@@ -7,125 +7,155 @@
     <script src="src/exercise2.js"></script>
     <script src="src/exercise3.js"></script>
     <script src="src/exercise4.js"></script>
+    <script src="src/exercise5.js"></script>
     <script src="src/exercise6.js"></script>
     <script src="src/exercise7.js"></script>
 </head>
 <body>
-    <h2>Exercise 1: Simple Calculator</h2>
-    <label for="num1">Number 1:</label>
-    <input type="text" id="num1"><br>
+    <div class="container">
+        <div class="item">
+            <h2>Exercise 1: Simple Calculator</h2>
+            <label for="num1">Number 1:</label>
+            <input type="text" id="num1"><br>
 
-    <label for="operador">Operator:</label>
-    <select id="operador">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="/">/</option>
-        <option value="*">*</option>
-    </select><br>
+            <label for="operador">Operator:</label>
+            <select id="operador">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+            </select><br>
 
-    <label for="num2">Number 2:</label>
-    <input type="text" id="num2"><br>
+            <label for="num2">Number 2:</label>
+            <input type="text" id="num2"><br>
 
-    <button onclick="exercise1()">Calculate</button>
+            <button onclick="exercise1()">Calculate</button>
 
-    <div class="custom-result">
-        <h3>Result:</h3>
-        <label id="resultado"></label>
-    </div>
+            <div class="custom-result">
+                <h3>Result:</h3>
+                <label id="resultado"></label>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="item">
+            <h2>Exercise 2: Prime Numbers</h2>
+            <label for="numPrime">Enter a number: </label>
+            <input type="text" id="numberP"><br>
+
+            <button onclick="exercise2()">Verify</button>
+
+            <div class="custom-result">
+                <h3> Is Prime: </h3>
+                <label id="isPrimeNumer"></label>
+            </div>
+            <div class="custom-result-2">
+                <h3>First ten prime numbers: </h3>
+                <label id="isFirstPrimes"></label>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div class="item">
+            <h2>Exercise 3: Factorial</h2>
+            <label for="numFactorial">Enter a number: </label>
+            <input type="text" id="numberF"><br>
+
+            <button onclick="exercise3()">Calculate</button>
+
+            <div class="custom-result">
+                <h3> Factorial is: </h3>
+                <label id="factorialNumber"></label>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="item">
+            <h2>Exercise 4: Palindrome</h2>
+            <label for="strPalindrome">write a word: </label>
+            <input type="text" id="stringP"><br>
+
+            <button onclick="exercise4()">Verify</button>
+
+            <div class="custom-result">
+                <h3> Is palindrome: </h3>
+                <label id="isPalindrome"></label>
+            </div>
+        </div>
+
+        <hr>
+        <div class="item">
+            <h2>Exercise 5: Table</h2>
+            <label for="numTable">Enter a number: </label>
+            <input type="text" id="numberT"><br>
+
+            <button onclick="exercise5()">Calculate</button>
+
+            <div class="custom-result">
+                <h3> Display multiplication table </h3>
+                <label id="tableResult"></label>
+            </div>
+           </div> 
+
+            <hr>
+            <div class="item">
+                <h2>Exercise 6: Vowel Counter</h2>
+                <label for="strVolwels">write a sentence: </label>
+                <input type="text" id="stringV"><br>
+
+                <button onclick="exercise6()">Verify</button>
+
+                <div class="custom-result">
+                    <h3> Vowel counter: </h3>
+                    <label id="volwelsCounting"></label>
+                </div>
+            </div>
+
+        <hr>
+
+        <div class="item">
+            <h2>Exercise 7: Grade Average</h2>
+            <label for="sub1">Subject grade 1: </label>
+            <input type="text" id="numberSub1"><br>
+
+            <label for="sub2">Subject grade 2: </label>
+            <input type="text" id="numberSub2"><br>
+
+            <label for="sub3">Subject grade 3: </label>
+            <input type="text" id="numberSub3"><br>
+
+            <button onclick="exercise7()">Average Calculate</button>
+
+            <div class="custom-result">
+                <h3> Grade Average </h3>
+                <label id="averageGrade"></label>
+            </div>
+        </div>
 
     <hr>
 
-    <h2>Exercise 2: Prime Numbers</h2>
-    <label for="numPrime">Enter a number: </label>
-    <input type="text" id="numberP"><br>
+    <div class="item">
+        <h2>Exercise 8: Interest Calculation</h2>
+        <label for="sub1">Subject grade 1: </label>
+        <input type="text" id="numberSub1"><br>
 
-    <button onclick="exercise2()">Verify</button>
+        <label for="sub2">Subject grade 2: </label>
+        <input type="text" id="numberSub2"><br>
 
-    <div class="custom-result">
-        <h3> Is Prime: </h3>
-        <label id="isPrimeNumer"></label>
+        <label for="sub3">Subject grade 3: </label>
+        <input type="text" id="numberSub3"><br>
+
+        <button onclick="exercise7()">Average Calculate</button>
+
+        <div class="custom-result">
+            <h3> Grade Average </h3>
+            <label id="averageGrade"></label>
+        </div>
     </div>
-    <div class="custom-result-2">
-        <h3>First ten prime numbers: </h3>
-        <label id="isFirstPrimes"></label>
-    </div>
-
-    <hr>
-
-    <h2>Exercise 3: Factorial</h2>
-    <label for="numFactorial">Enter a number: </label>
-    <input type="text" id="numberF"><br>
-
-    <button onclick="exercise3()">Calculate</button>
-
-    <div class="custom-result">
-        <h3> Factorial is: </h3>
-        <label id="factorialNumber"></label>
-    </div>
-
-    <hr>
-
-    <h2>Exercise 4: Palindrome</h2>
-    <label for="strPalindrome">write a word: </label>
-    <input type="text" id="stringP"><br>
-
-    <button onclick="exercise4()">Verify</button>
-
-    <div class="custom-result">
-        <h3> Is palindrome: </h3>
-        <label id="isPalindrome"></label>
-    </div>
-
-    <hr>
-
-    <h2>Exercise 6: Vowel Counter</h2>
-    <label for="strVolwels">write a sentence: </label>
-    <input type="text" id="stringV"><br>
-
-    <button onclick="exercise6()">Verify</button>
-
-    <div class="custom-result">
-        <h3> Vowel counter: </h3>
-        <label id="volwelsCounting"></label>
-    </div>
-
-    <hr>
-
-    <h2>Exercise 7: Grade Average</h2>
-    <label for="sub1">Subject grade 1: </label>
-    <input type="text" id="numberSub1"><br>
-
-    <label for="sub2">Subject grade 2: </label>
-    <input type="text" id="numberSub2"><br>
-
-    <label for="sub3">Subject grade 3: </label>
-    <input type="text" id="numberSub3"><br>
-
-    <button onclick="exercise7()">Average Calculate</button>
-
-    <div class="custom-result">
-        <h3> Grade Average </h3>
-        <label id="averageGrade"></label>
-    </div>
-
-    <hr>
-
-    <h2>Exercise 8: Interest Calculation</h2>
-    <label for="sub1">Subject grade 1: </label>
-    <input type="text" id="numberSub1"><br>
-
-    <label for="sub2">Subject grade 2: </label>
-    <input type="text" id="numberSub2"><br>
-
-    <label for="sub3">Subject grade 3: </label>
-    <input type="text" id="numberSub3"><br>
-
-    <button onclick="exercise7()">Average Calculate</button>
-
-    <div class="custom-result">
-        <h3> Grade Average </h3>
-        <label id="averageGrade"></label>
-    </div>
+</div>
 
 </body>
 </html>

@@ -12,14 +12,13 @@ select {
     margin-top: 8px;
 }
 
-/* Estilos para o botão */
 button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: 18px;
     margin-left: 15px;
 }
 
@@ -38,4 +37,14 @@ button {
 .custom-result-2 {
     display: flex;
     align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: inline;
+    align-self: center;
 }
