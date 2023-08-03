@@ -11,6 +11,9 @@ input {
 select {
     margin-top: 8px;
 }
+hr {
+    width: 85%;
+}
 
 button {
     background-color: #4CAF50;
@@ -42,9 +45,18 @@ button {
 .container {
     display: flex;
     flex-direction: column;
-}
+   }
 
 .item {
     display: inline;
     align-self: center;
 }
+
+table {
+    border-collapse: collapse;
+    border: 2px solid white;
+  }
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+  }
