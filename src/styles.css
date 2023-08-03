@@ -1,0 +1,41 @@
+label {
+    font-weight: bold;
+    color: #333;
+    margin: 10px 5px;
+}
+
+input {
+    margin-top: 8px;
+}
+
+select {
+    margin-top: 8px;
+}
+
+/* Estilos para o botão */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+/* Estilos para o resultado */
+#resultado {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.custom-result {
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+}
+
+.custom-result-2 {
+    display: flex;
+    align-items: center;
+}
